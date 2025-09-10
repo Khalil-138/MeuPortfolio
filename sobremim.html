@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
-    
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Mim - Khalil</title>
-  <link rel="stylesheet" href="style.css"> <!-- ou sobre.css se quiser separar -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <style>
     /* Ajustando as imagens para um terço do tamanho */
     img {
@@ -16,23 +14,39 @@
       border-radius: 8px;
       margin-top: 15px;
     }
+
     /* Centraliza as imagens e as legendas */
     figure {
       text-align: center;
       margin: 0;
     }
+
     /* Estilo para as legendas */
     figcaption {
       font-style: italic;
       margin-top: 10px;
       color: #555;
     }
-    /* Estilo para o vídeo */
-    iframe {
+
+    /* Container para centralizar vídeo */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Proporção 16:9 */
+      height: 0;
+      overflow: hidden;
       max-width: 100%;
-      height: 400px;
+      margin: 20px auto;
       border-radius: 8px;
-      margin-top: 15px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -69,7 +83,13 @@
     <section>
       <h2>🎬 Vídeo Recomendado: Pálido Ponto Azul</h2>
       <p><strong>Pálido Ponto Azul, de Carl Sagan, Narrado por Guilherme Briggs</strong></p>
-      <iframe src="https://www.youtube.com/embed/4_tiv9v964k" title="Pálido Ponto Azul - Carl Sagan, Narrado por Guilherme Briggs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/4_tiv9v964k" 
+          title="Pálido Ponto Azul - Carl Sagan, Narrado por Guilherme Briggs" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
       <figcaption>
         Me foi proposto escolher um vídeo e logo me veio à mente este. Sempre gosto de visitá-lo. Gosto muito do Carl Sagan desde a antiga série Cosmos, o que me levou a ler seus livros e querer aprender um pouco mais sobre o nosso universo, nosso mundo e nós mesmos. Esse vídeo, narrado pelo nosso talentoso Guilherme Briggs, eterna voz de Superman, nos convida a pensar na Terra e na humanidade de forma íntima e humilde, assim como a obra de divulgação científica de Carl Sagan fez e continua fazendo.
       </figcaption>
