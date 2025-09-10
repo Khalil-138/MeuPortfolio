@@ -19,37 +19,63 @@ body::before {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); 
+  z-index: -1;
 }
 
 h1 {
   color: #00ffcc;
 }
 
+/* Botão neon geral */
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #00ffcc;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  margin: 15px;
+  padding: 12px 25px;
   font-size: 1.1rem;
+  font-weight: bold;
+  color: #00ffcc;
+  background: transparent;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  /* Neon glow */
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Efeito ao passar o mouse */
 button:hover {
-  background: #00bfa6;
+  color: #0a0a0a;
+  background: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc;
+  transform: scale(1.05);
 }
+
+/* Botão voltar com neon rosa */
 .btn-voltar {
   display: inline-block;
-  margin-top: 30px;
   padding: 12px 25px;
-  background: #ff4d6d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 1rem;
   font-weight: bold;
-  transition: 0.3s;
+  text-transform: uppercase;
+  color: #ff4d6d;
+  background: transparent;
+  border: 2px solid #ff4d6d;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+
+  /* Glow rosa neon */
+  box-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d, 0 0 40px #ff4d6d;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-voltar:hover {
-  background: #cc3a54;
+  color: #0a0a0a;
+  background: #ff4d6d;
+  box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff4d6d, 0 0 80px #ff4d6d;
+  transform: scale(1.05);
 }
