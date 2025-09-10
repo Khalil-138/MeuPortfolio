@@ -103,7 +103,11 @@ const dicas = [
   "Renan, me aprova pelamor de Deus, eu tenho TDAH não diagnosticado",
   "Quando tudo mais falhar, leia a documentação... ou peça ajuda a um colega que jura que sabe o que está fazendo.",
 ];
+const btnMusica = document.getElementById("btnMusica");
 
+btnMusica.addEventListener("click", () => {
+  btnMusica.innerText = "💀 Impossível pausar, olha a pedra!";
+});
 document.getElementById("btnDica").addEventListener("click", () => {
   const aleatorio = Math.floor(Math.random() * dicas.length);
   document.getElementById("dica").innerText = dicas[aleatorio];

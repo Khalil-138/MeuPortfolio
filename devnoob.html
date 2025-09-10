@@ -10,23 +10,29 @@
   <header>
     <h1>💡 Dicas dispensáveis de um dev noob 💡</h1>
   </header>
-<audio autoplay loop>
-  <source src="CP2077.mp3" type="audio/mp3">
-  Seu navegador não suporta áudio.
-</audio>
-<button onclick="document.getElementById('bgMusic').play()"> Soltar a pedra (use um capacete)🎵</button>
 
-<audio id="bgMusic" loop>
-  <source src="musica.mp3" type="audio/mp3">
-</audio>
+  <!-- Botão da música -->
+  <button id="btnMusica">⏸️ Pausar música</button>
+
+  <!-- Música de fundo -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="CP2077.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
   <main>
+    <!-- Botão de dica -->
+    <button id="btnDica">Gerar dica aleatória</button>
+
+    <!-- Onde aparece a dica -->
     <p id="dica">Clique no botão para receber uma dica aleatória.</p>
-    <button id="btnDica">Gerar dica</button>
+
     <br><br>
 
-  <a href="index.html" class="btn-voltar">
-    Voltar para onde você nunca deveria ter saído
-  </a>
+    <!-- Link de voltar -->
+    <a href="index.html" class="btn-voltar">
+      Voltar para onde você nunca deveria ter saído
+    </a>
   </main>
 
   <script src="devnoob.js"></script>
