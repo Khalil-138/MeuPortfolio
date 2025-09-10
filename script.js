@@ -14,8 +14,7 @@ titulos.forEach(titulo => {
   });
 });
 
-// Botão para alternar tema (claro/escuro)
-const botaoTema = document.createElement("button");
+
 botaoTema.textContent = "Alternar Tema";
 botaoTema.style.margin = "20px";
 botaoTema.style.padding = "10px";
@@ -24,8 +23,4 @@ document.body.insertBefore(botaoTema, document.body.firstChild);
 
 let modoEscuro = false;
 
-botaoTema.addEventListener("click", () => {
-  modoEscuro = !modoEscuro;
-  document.body.style.backgroundColor = modoEscuro ? "#2c3e50" : "#f4f4f4";
-  document.body.style.color = modoEscuro ? "#ecf0f1" : "#333";
-});
+;
