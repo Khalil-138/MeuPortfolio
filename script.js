@@ -1,5 +1,5 @@
 // Mensagem de boas-vindas no console
-console.log("Bem-vindo ao meu portfólio!");
+console.log("Bem-vindos ao meu portfólio!");
 
 // Função para destacar títulos ao passar o mouse
 const titulos = document.querySelectorAll("h3");
@@ -10,7 +10,7 @@ titulos.forEach(titulo => {
   });
 
   titulo.addEventListener("mouseleave", () => {
-    titulo.style.color = "#1abc9c";
+    titulo.style.color = "#69e2caff";
   });
 });
 
